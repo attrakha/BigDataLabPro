@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<%= form_for @yazim, url: {action: "update"} do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_area :content %>
+    <%= f.submit "Update" %>
+<% end %>
+
+
+</body>
+</html>
